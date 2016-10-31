@@ -2,7 +2,7 @@
 //
 // WARNING: Code you write here will be lost the next time you deploy the project.
 
-package system.proxies.microflows;
+package movieapp.proxies.microflows;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,13 +13,13 @@ import com.mendix.systemwideinterfaces.core.IContext;
 
 public class Microflows
 {
-	// These are the microflows for the System module
-	public static void showHomePage(IContext context)
+	// These are the microflows for the MovieApp module
+	public static void getMovies(IContext context)
 	{
 		try
 		{
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			Core.execute(context, "System.ShowHomePage", params);
+			Core.execute(context, "MovieApp.GetMovies", params);
 		}
 		catch (CoreException e)
 		{
