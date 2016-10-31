@@ -1,0 +1,8 @@
+.svn
+.mendix-cache
+deployment
+*.bak
+*.lock
+*~
+data
+
